@@ -41,7 +41,7 @@ set(PROJECT_CREATOR "Kambiz Asadzadeh" CACHE STRING "Creator of your project.") 
 
 set(PROJECT_ORGANIZATION "The Genyleap" CACHE STRING "Organization name.") #Your project creator.
 
-set(PROJECT_LICENSE_TYPE "LGPL3.0" CACHE STRING "Project License Type.") #Your project license type.
+set(PROJECT_LICENSE_TYPE "MIT" CACHE STRING "Project License Type.") #Your project license type.
 
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/.git")
   execute_process(

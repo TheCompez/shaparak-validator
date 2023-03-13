@@ -1,5 +1,5 @@
 // Copyright (C) 2023 Kambiz Asadzadeh
-// SPDX-License-Identifier: LGPL-3.0-only
+// SPDX-License-Identifier: MIT
 
 import QtQuick
 import QtQuick.Window
