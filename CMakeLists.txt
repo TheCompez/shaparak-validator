@@ -2,7 +2,7 @@
 #   Title   :                       Project Template
 #   Version :                       1.0.80
 #   Author  :                       Kambiz Asadzadeh
-#   Url     :                       https://github.com/genyleap/Project-Template
+#   Url     :                       https://github.com/KambizAsadzadeh/Shaparak-Validator
 #   Organization  :                 The Genyleap
 # ----------------------------------------------------------------------------------------
 
@@ -19,12 +19,12 @@ include(FetchContent)
 
 # ------ PROJECT INFO ------
 # Options
-set(PROJECT_NAME "ProjectTemplate" CACHE STRING "Project Name.") #You can change "ProjectTemplate" with your project name.
+set(PROJECT_NAME "ShaparakValidator" CACHE STRING "Project Name.") #You can change "ProjectTemplate" with your project name.
 set(PROJECT_TARGET ${PROJECT_NAME} CACHE STRING "Project Target Name.")
 
 set(PROJECT_VERSION_MAJOR 1)
 set(PROJECT_VERSION_MINOR 0)
-set(PROJECT_VERSION_PATCH 80)
+set(PROJECT_VERSION_PATCH 0)
 
 # ---- Project settings ----
 set_property(GLOBAL APPEND PROPERTY USE_FOLDERS ON)
@@ -41,7 +41,7 @@ set(PROJECT_CREATOR "Kambiz Asadzadeh" CACHE STRING "Creator of your project.") 
 
 set(PROJECT_ORGANIZATION "The Genyleap" CACHE STRING "Organization name.") #Your project creator.
 
-set(PROJECT_LICENSE_TYPE "MIT" CACHE STRING "Project License Type.") #Your project license type.
+set(PROJECT_LICENSE_TYPE "LGPL3.0" CACHE STRING "Project License Type.") #Your project license type.
 
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/.git")
   execute_process(
@@ -68,15 +68,15 @@ set(PROJECT_LANGUAGES CXX)
 set(PROJECT_USAGE_TYPE "application" CACHE STRING "Usage Type.")
 
 #Use these keys [stl, qt, qtwidget, qtquick]
-set(PROJECT_MAIN_TYPE "stl" CACHE STRING "Library System.")
+set(PROJECT_MAIN_TYPE "qtquick" CACHE STRING "Library System.")
 
 set(DEVELOPER_BUNDLE_IDENTIFIER com.kambizasadzadeh.app.${PROJECT_NAME} CACHE STRING "Developer Bundle Identifier.")
 
 #You can replace your project description with this string.
-set(PROJECT_DESCRIPTION "A template for modern C++ projects with useful features for developing cross-platform projects." CACHE STRING "Project Description")
+set(PROJECT_DESCRIPTION "A tool for validating Iranian banking gateways." CACHE STRING "Project Description")
 
 #Your project website address.
-set(PROJECT_HOMEPAGE_URL "https://github.com/genyleap/Project-Template" CACHE STRING "Project URL.")
+set(PROJECT_HOMEPAGE_URL "https://github.com/KambizAsadzadeh/Shaparak-Validator" CACHE STRING "Project URL.")
 
 #Project pre-configuration system.
 configure_file(

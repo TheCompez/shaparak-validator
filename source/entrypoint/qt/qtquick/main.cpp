@@ -1,5 +1,8 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include "utils.hpp"
+
+#define UI_ENTRY "qrc:/ui/main.qml"
 
 int main(int argc, char *argv[])
 {
@@ -9,8 +12,12 @@ int main(int argc, char *argv[])
 
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
-    const QUrl url(QStringLiteral("qrc:/ui/main.qml"));
-//    const QUrl url(u"qrc:/ui/main.qml"_qs);
+
+    //![Register]
+    qmlRegisterType<Shaparak::Utils>("Utils", 1, 0, "Utils");
+    //![Register]
+
+    const QUrl url(QStringLiteral(UI_ENTRY));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
         &app, [url](QObject *obj, const QUrl &objUrl) {
             if (!obj && url == objUrl)

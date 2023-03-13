@@ -1,6 +1,12 @@
 <RCC>
     <qresource prefix="/ui">
         <file>main.qml</file>
-        <file>test.qml</file>
+        <file>MainContainer.qml</file>
+        <file>FontSystem.qml</file>
+        <file>resources/Font Awesome 5 Free-Regular-400.otf</file>
+        <file>resources/Font Awesome 5 Free-Solid-900.otf</file>
+        <file>resources/Vazirmatn-Regular.ttf</file>
+        <file>resources/Vazirmatn-Light.ttf</file>
+        <file>resources/Vazirmatn-Bold.ttf</file>
     </qresource>
 </RCC>
