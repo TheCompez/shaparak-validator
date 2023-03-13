@@ -5,15 +5,8 @@ A tool for validating Iranian banking gateways.
 
 ## Supported platforms:
 
-- [x] macOS
-- [x] Windows
-- [x] Linux
-- [x] freeBSD
-- [ ] OpenBSD
-- [ ] NetBSD
-- [x] iOS
-- [ ] watchOS
-- [x] Android
+- [x] Desktop [macOS, Windows, Linux]
+- [x] Mobile [iOS, Android]
 - [x] Web (Wasm)
 
 ## Language Standard Support [C++2a or C++2b]
@@ -21,8 +14,9 @@ A tool for validating Iranian banking gateways.
 
 ## Building
 
-- You need CMake tool for building source code
+- You need CMake tool for building source code.
 - CMake 3.23 or higher is required.
+- Qt6 Framework.
 
 ```
 cd build
